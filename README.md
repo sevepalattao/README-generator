@@ -2,7 +2,7 @@
 
 # Description
 
-For this challenge it was my job to add to existing starter code to develop a README generator. The technologies I used for this were Node and JavaScript. The generating process is started by running the command ```bash node index.js ``` in the command line terminal. It then asks you a series of relevant questions for a readme file. Once the questions are completed, a readme file is generated. 
+For this challenge it was my job to add to existing starter code to develop a README generator. The technologies I used for this were Node and JavaScript. The generating process is started by running the command ``` node index.js ``` in the command line terminal. It then asks you a series of relevant questions for a readme file. Once the questions are completed, a readme file is generated. 
 
 # Screenshot 
 
