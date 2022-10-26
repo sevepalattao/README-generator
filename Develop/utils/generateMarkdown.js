@@ -34,13 +34,13 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
     if (license === 'MIT') {
-        return `This project is licensed under the ${license} license. For complete copyright information click here: ${renderLicenseLink(license)}`
+        return `This project is licensed under the ${license} license. For complete copyright information click here: [link](${renderLicenseLink(license)})`
     } else if (license === 'APACHE 2.0') {
-        return `This project is licensed under the ${license} license. For complete copyright information click here: ${renderLicenseLink(license)}`
+        return `This project is licensed under the ${license} license. For complete copyright information click here: [link](${renderLicenseLink(license)})`
     } else if (license === 'GPL 3.0') {
-        return `This project is licensed under the ${license} license. For complete copyright information click here: ${renderLicenseLink(license)}`
+        return `This project is licensed under the ${license} license. For complete copyright information click here: [link](${renderLicenseLink(license)})`
     } else if (license === 'BSD 3') {
-        return `This project is licensed under the ${license} license. For complete copyright information click here: ${renderLicenseLink(license)}`
+        return `This project is licensed under the ${license} license. For complete copyright information click here: [link](${renderLicenseLink(license)})`
     } else {
         return '';
     }
@@ -48,7 +48,7 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# ${data.project}
     ## ${renderLicenseBadge(data.license)}
     ## Description
     ${data.description}
@@ -62,8 +62,8 @@ function generateMarkdown(data) {
         * [Questions] (#questions)
     
     ## Installation
-    ${data.description}
-
+    ${data.install}
+    
     ## Usage
     ${data.usage}
 

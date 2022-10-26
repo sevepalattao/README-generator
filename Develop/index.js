@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
 
-const markdown = require('./utils/generateMarkdown');
+const markdown = require('./utils/generateMarkdown.js');
 const fs = require('fs');
 const inquirer = require('inquirer');
 
@@ -9,7 +9,10 @@ const inquirer = require('inquirer');
 const questions = ['What is your GitHub username?', 'What is your email address?', "What is your project's name?", 'Please enter a short description of your project.', 'What kind of license should your project have?', 'What command should be run to install dependencies?', 'What command should be run to run tests?', 'What does the user need to know about using the repo?', 'What does the user need to know about contributing to the repo?'];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, markdown(data), (err) =>
+    err ? console.error(err) : console.log('Success!'));
+}
 
 // TODO: Create a function to initialize app
 function init() {
@@ -17,7 +20,7 @@ function init() {
     .prompt([
         {
             type: 'input',
-            name: 'name',
+            name: 'username',
             message: questions[0]
         },
         {
@@ -64,8 +67,10 @@ function init() {
             message: questions[8]
         },
     ])
-    .then((data) => console.log(data))
-    }
+    .then((data) => {
+        writeToFile('newREADME/GeneratedREADME.md', data)
+    });
+}
 
 
 // Function call to initialize app
