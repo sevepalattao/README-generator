@@ -34,13 +34,13 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
     if (license === 'MIT') {
-        return `This project is licensed under the ${license} license. For complete copyright information click [here:] (${renderLicenseLink(license)})`
+        return `This project is licensed under the ${license} license. For complete copyright information click [here](${renderLicenseLink(license)})`
     } else if (license === 'APACHE 2.0') {
-        return `This project is licensed under the ${license} license. For complete copyright information click [here:] (${renderLicenseLink(license)})`
+        return `This project is licensed under the ${license} license. For complete copyright information click [here](${renderLicenseLink(license)})`
     } else if (license === 'GPL 3.0') {
-        return `This project is licensed under the ${license} license. For complete copyright information click [here:] (${renderLicenseLink(license)})`
+        return `This project is licensed under the ${license} license. For complete copyright information click [here](${renderLicenseLink(license)})`
     } else if (license === 'BSD 3') {
-        return `This project is licensed under the ${license} license. For complete copyright information click [here:] (${renderLicenseLink(license)})`
+        return `This project is licensed under the ${license} license. For complete copyright information click [here](${renderLicenseLink(license)})`
     } else {
         return '';
     }
@@ -76,7 +76,7 @@ ${data.contribute}
 # Tests
     ${data.test}
 
-## Questions
+# Questions
 If you have any questions about the repo, open an issue or contact me directly at [${data.email}](${data.email}). You can find more of my work at [${data.username}](${data.username})
 `;
 }

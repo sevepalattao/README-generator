@@ -1,7 +1,7 @@
-# My Sick Project
-## [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+# My Super Cool Project
+## [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
-It's sickkk.
+It is super cool.
 
 ## Table of Contents
 * [Installation](#Installation)
@@ -15,16 +15,16 @@ It's sickkk.
     npm i
  
 # Usage
-It's sick.
+It is really cool.
 
 # License
-This project is licensed under the BSD 3 license. For complete copyright information click [here:] (https://opensource.org/licenses/BSD-3-Clause)
+This project is licensed under the MIT license. For complete copyright information click [here](https://mit-license.org/)
 
 # Contributing
-Contribute.
+Please contribute.
 
 # Tests
     npm test
 
-## Questions
+# Questions
 If you have any questions about the repo, open an issue or contact me directly at [seve@email.com](seve@email.com). You can find more of my work at [sevepalattao](sevepalattao)
