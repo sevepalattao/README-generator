@@ -68,7 +68,7 @@ function init() {
         },
     ])
     .then((data) => {
-        writeToFile('newREADME/GeneratedREADME.md', data)
+        writeToFile('brandNewREADME.md', data)
     });
 }
 
